@@ -35,7 +35,7 @@
 ## Credits
 - [Thanks to Masterolic for this wonderful project](https://github.com/Masterolic)
 - [Thanks to Dan for pyrogram](https://github.com/pyrogram/pyrogram)
--[Thanks to me for making more compatible]
+- [Thanks to me for making more compatible]
 
 ## Warning
 
