@@ -7,7 +7,7 @@
 from pyrogram import filters, Client as Dxbotz
 import bs4, requests
 from config import Config
-@Mbot.on_message(filters.regex(r'https?://.*instagram[^\s]+') & filters.incoming, group=1)
+@Dxbotz.on_message(filters.regex(r'https?://.*instagram[^\s]+') & filters.incoming, group=1)
 async def link_handler(Dxbotz, message):
     link = message.matches[0].group(0)
     try:
