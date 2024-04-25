@@ -24,7 +24,7 @@ class Config(object):
     START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/19eeb26fa2ce58765917a.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '763990585').split()]
     #the channel which need to force subscribed, channel username without @
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1001792962793") 
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "ir_botz") 
     #the log channel id must start in -100 this channel will be were the bot send logs
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
     LOG_GROUP = int(os.environ.get("LOG_GROUP", None))
