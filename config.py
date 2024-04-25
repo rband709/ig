@@ -10,21 +10,21 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyrogram client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "3335796")
+    API_HASH  = os.environ.get("API_HASH", "138b992a0e672e8346d8439c3f42ea78")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5088657122:AAELk-O6R8rYxzqXNvWWRhtl2O0-FNLwHS0") 
    
     # database config get this from mongodb
     DB_NAME = os.environ.get("DB_NAME","Dxbotz")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://abirhasan2005:abirhasan@cluster0.i6qzp.mongodb.net/cluster0?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
     #start pic url this image will shown in start command get this from @DX_telegraphbot
-    START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
+    START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/19eeb26fa2ce58765917a.jpg")
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '763990585').split()]
     #the channel which need to force subscribed, channel username without @
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1001792962793") 
     #the log channel id must start in -100 this channel will be were the bot send logs
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
     LOG_GROUP = int(os.environ.get("LOG_GROUP", None))
